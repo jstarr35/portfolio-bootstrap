@@ -1,0 +1,102 @@
+.portfolio-navbar.gradient {
+  background-color: #8e8c7a;
+}
+
+body {
+  background-color: #262626;
+  color: var(--bs-body-bg);
+}
+
+.special-skill-item {
+  background-color: var(--bs-dark);
+  box-shadow: -1px 2px 11px rgb(0,0,0);
+}
+
+.icon.ion-ios-lightbulb-outline {
+  background: #8e8c7a;
+}
+
+.icon.ion-ios-star-outline {
+  background: #8e8c7a;
+}
+
+.icon.ion-ios-gear-outline {
+  background: #8e8c7a;
+}
+
+.portfolio-block.website.gradient {
+  background: var(--bs-gray-900);
+}
+
+a {
+  color: #ffecce;
+}
+
+brand {
+  font-family: 'Roboto';
+  font-size: 48px;
+}
+
+.icon.ion-social-linkedin-outline.icon {
+  color: rgb(14,160,255);
+}
+
+.icon.ion-social-github.icon {
+  color: rgb(14,160,255);
+}
+
+svg {
+  color: rgb(14,160,255);
+}
+
+.hobby-media {
+  text-align: center;
+  margin-top: 32px;
+}
+
+img {
+  max-height: 225px;
+}
+
+.icon.ion-ios-world-outline {
+  background: rgb(142,140,122);
+}
+
+.icon.ion-laptop {
+  background: rgb(142,140,122);
+}
+
+.icon.ion-social-android {
+  background: rgb(142,140,122);
+}
+
+.project-card-no-image-description {
+  height: 86px;
+}
+
+.ssa {
+  max-height: 1020px;
+  height: 720px;
+  width: auto !important;
+}
+
+div {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.icon-light {
+  color: #ffecce;
+  height: 32px;
+  width: auto;
+}
+
+.navigation-clean {
+  padding-top: 4.2px;
+  padding-bottom: 4.2px;
+}
+
+.progress-div {
+  padding-top: 0px;
+}
+
