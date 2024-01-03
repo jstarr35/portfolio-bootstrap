@@ -12,3 +12,8 @@
   color: var(--bs-gray-500) !important;
 }
 
+.nav-link.active {
+  font-weight: 550;
+  text-decoration: underline;
+}
+

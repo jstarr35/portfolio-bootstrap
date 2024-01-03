@@ -71,7 +71,7 @@ img {
 }
 
 .project-card-no-image-description {
-  height: 86px;
+  height: 96px;
 }
 
 .ssa {
@@ -98,5 +98,115 @@ div {
 
 .progress-div {
   padding-top: 0px;
+}
+
+.calendly-badge-widget {
+  left: 50% !important;
+  margin-left: -100px !important;
+}
+
+.schedule-item {
+  box-shadow: 2px 2px 7px 4px #000000;
+  height: 100%;
+  color: var(--bs-body-bg);
+}
+
+.calendly-overlay .calendly-popup .calendly-popup-content {
+  min-width: 320px !important;
+  height: 750px !important;
+}
+
+.btn-schedule {
+  /*flex: 1;*/
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: rgb(255,236,206);
+  color: #222529;
+  padding: 1rem;
+  border-radius: 100px;
+  border: none;
+  align-content: center;
+}
+
+.schedule-card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-bg);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+  padding: 0;
+}
+
+.schedule-text {
+  font-style: italic;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.schedule-title {
+  font-family: 'Exo';
+  font-size: 1.8rem;
+}
+
+.projects-text {
+  color: #fffff1 !important;
+}
+
+.database-icon {
+  background: #8e8c7a;
+  width: 70px;
+  height: 70px;
+  margin: 0px;
+  padding: 13px;
+  padding-bottom: 17px;
+}
+
+.brand-img {
+  height: 4rem;
+}
+
+@media (min-width: 300px) {
+  .intro-p {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-p {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-p {
+    font-size: 1.55rem !important;
+  }
+}
+
+.skill-col {
+  min-width: 260px;
+}
+
+.container {
 }
 
