@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html data-bs-theme="light" lang="en-us">
 
 <head>
     <meta charset="utf-8">
@@ -13,9 +13,13 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Cabin.css">
+    <link rel="stylesheet" href="assets/css/Exo.css">
+    <link rel="stylesheet" href="assets/css/Lato.css">
+    <link rel="stylesheet" href="assets/css/Roboto.css">
+    <link rel="stylesheet" href="assets/css/Ubuntu.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/nav-top-1.css">
     <link rel="stylesheet" href="assets/css/nav-top.css">
@@ -23,14 +27,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="index.html">Jason Starr</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-md navigation-clean navbar-light" style="padding-top: 1px;padding-bottom: 1px;">
+        <div class="container"><a class="navbar-brand" href="index.html" style="text-shadow: 1px 2px 7px var(--bs-primary), -2px -2px 6px var(--bs-primary);"><img class="brand-img" src="assets/img/1.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="projects-no-images.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="projects.html"><span style="color: rgb(0, 0, 0);">Projects</span>&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="projects.html"><strong>Summary</strong></a><a class="dropdown-item" href="https://github.com/jstarr35/MossWPF" target="_blank">MossWPF</a><a class="dropdown-item" href="https://herdone.com" target="_blank">HerdOne</a><a class="dropdown-item" href="infosec.html">InfoSec Assessment</a></div>
+                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="schedule.html">Contact</a></li>
-                    <li class="nav-item"></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +48,7 @@
             <div class="container">
                 <div class="avatar"><img src="assets/img/avatars/profile_circle.png"></div>
                 <div class="about-me">
-                    <p>Hello! I am Jason Starr. I am a .NET developer with experience in web, desktop, and mobile development. Most of my experience has centered on backend development, but I continuously explore new technologies and dedicate time towards maintaining my mobile and frontend skillsets.</p><a class="btn btn-outline-primary" role="button" href="cv.html">Contact Me</a>
+                    <p class="intro-p">Hello! My name is Jason Starr and I am a .NET developer with experience in web, desktop, and mobile development. Most of my experience has centered on backend development, but I continuously explore new technologies and dedicate time towards maintaining my mobile and frontend skillsets. I also am involved in the development of a few open-source <a href="projects.html">projects</a>.</p><a class="btn btn-outline-primary" role="button" href="cv.html">Contact Me</a>
                 </div>
             </div>
         </section>
@@ -50,31 +58,45 @@
                 <div class="heading">
                     <h2>Skills</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4">
+                    <div class="col skill-col">
+                        <div class="card border-0 special-skill-item h-100">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-world-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Development</h3>
-                                <p class="card-text">Contributed to two, full-featured, multi-page web apps. Both leverage ASP.NET, and offer unique and responsive client features. More recently building SPAs with Angular and .NET Core.</p>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="text-light card-title">Web Development</h3>
+                                <p class="card-text projects-text">Supported an enterprise-level <a href="https://psdconsulting.com/software/compass-platform/" target="_blank">application</a> in the energy efficiency industry that leverages ASP.NET and Angular. Previously, contributed to two, full-featured,&nbsp; web apps.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                    <div class="col skill-col">
+                        <div class="card border-0 special-skill-item h-100">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-laptop"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Desktop Applications</h3>
-                                <p class="card-text">Developed several applications with WPF and Windows Forms. Have experience building custom control libraries and writing&nbsp; backend services with WCF.</p>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="text-light card-title">Desktop Applications</h3>
+                                <p class="text-light card-text projects-text">Developed several applications with WPF and Windows Forms including building custom control libraries.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
+                    <div class="col skill-col">
+                        <div class="card border-0 special-skill-item h-100">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-social-android"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Android Mobile</h3>
-                                <p class="card-text">Created android mobile application following the principles of modern Adnroid development (MAD). Utilizing JetPack libraries, MVVM architecture, and written 100% with Kotlin.</p>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="text-light card-title">Android Mobile</h3>
+                                <p class="card-text projects-text">Created android mobile application following the principles of modern Adnroid development (MAD). Utilizing JetPack libraries, MVVM architecture, and written with Kotlin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col skill-col">
+                        <div class="card border-0 special-skill-item h-100">
+                            <div class="card-header bg-transparent border-0"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-database-fill text-light border rounded-circle border-secondary database-icon">
+                                    <path d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223Z"></path>
+                                    <path d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"></path>
+                                    <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"></path>
+                                    <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"></path>
+                                </svg></div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="text-light card-title">Database</h3>
+                                <p class="card-text projects-text">Several years experience working with relational databases. Primarily Microsoft SQL Server, on premises and in Azure cloud.</p>
                             </div>
                         </div>
                     </div>
@@ -84,12 +106,13 @@
     </main>
     <footer class="page-footer" style="opacity: 1;">
         <div class="container">
-            <div class="links"><a class="footer-links" href="cv.html">About me</a><a class="footer-links" href="schedule.html">Contact me</a><a class="footer-links" href="projects-no-images.html">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-github" style="color: rgb(255,255,255);"></i></a><a href="#"><i class="icon ion-social-hackernews"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="links"><a class="footer-links" href="cv.html">About me</a><a class="footer-links" href="schedule.html">Contact me</a><a class="footer-links" href="projects.html">Projects</a></div>
+            <div class="social-icons"><a href="https://github.com/jstarr35" target="_blank"><i class="icon ion-social-github fs-2 text-dark" style="color: rgb(255,255,255);"></i></a><a href="https://twitter.com/Jason_Starr35" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/starr-j/" target="_blank"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/calendly.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
 </body>
